@@ -1,0 +1,31 @@
+@charset "utf-8";
+table {
+width : 600px;
+border : 1px solid gray;   /*1px두께로 실선으로 파란색 */
+border-collapse : collapse; /*줄합치기*/
+}
+td {
+border : 1px dotted green;
+
+height : 20px;
+padding : 10px;
+}
+th {
+width : 100px;	
+height : 30px;
+background : darkgray;
+color : yellow;
+}
+
+tr:nth-child(even) {
+background : aliceblue;
+}
+
+tbody tr:hover {
+background : pink;
+}
+
+.subject {
+width : 30%;
+
+}

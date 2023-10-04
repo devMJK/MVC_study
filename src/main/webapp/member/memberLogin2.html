@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>회원로그인</title>
+<link href="./css/member.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<script type="text/javascript">
+function check(){
+
+	var fm = document.frm;	//문서객체안의 폼객체이름
+	
+	if(fm.memberId.value == ""){
+		alert("아이디를 입력하세요");
+		fm.memberId.focus();
+		return;
+	}else if (fm.memberPwd.value ==""){
+		alert("비밀번호를 입력하세요");
+		fm.memberPwd.focus();
+		return;
+	}
+	return;	
+}
+</script>
+<h1>회원로그인</h1>
+	<form name="" action="" method="">
+		<table border="1" style="width:600px">
+		<tr>
+		<th style="width:200px">아이디</th>
+		<td>
+		<input type="text" name="memberId">
+		</td>
+		</tr>
+		<tr>
+		<th>비밀번호</th>
+		<td><input type="password" name="memberPwd"></td>
+		</tr>		
+		<tr>
+		<td colspan="2" style="text-align:center;">
+		<input type="button" name="btn" value="확인" onclick="check();"><!--데이터전송기능버튼 -->
+		</td>
+		</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>

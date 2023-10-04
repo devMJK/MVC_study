@@ -1,0 +1,70 @@
+@charset "utf-8";
+table {
+width : 600px;
+border : 1px solid blue;   /*1px두께로 실선으로 파란색 */
+border-collapse : collapse; /*줄합치기*/
+}
+
+th {
+background : darkgray;
+border : 1px dotted green;
+width : 25%;
+height : 20px;
+padding : 10px;
+color : white;
+}
+td {
+border : 1px dotted green;
+height : 20px;
+padding : 10px;
+}
+input[type=text],input[type=password],input[type=email] {
+color :  red;
+border : 2px solid skyblue;
+}
+
+input[type=text]:hover {
+background:aliceblue;
+}
+
+input[type=text]:focus {
+font-size : 120%;
+}
+
+select {
+  border: 2px solid skyblue;
+}
+
+select:focus {
+font-size : 120%;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: skyblue;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 14px;
+  outline: 0;
+  width: 14px;
+}
+input[type="checkbox"]::after {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  content: '';
+  display: none;
+  height: 40%;
+  left: 40%;
+  position: relative;
+  top: 20%;
+  transform: rotate(45deg);
+  width: 15%;
+}
+input[type="checkbox"]:checked {
+  background: #505bf0;
+}
+input[type="checkbox"]:checked::after {
+  display: block;
+}
